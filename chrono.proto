@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option go_package = "chrono";
+package chrono;
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/duration.proto";
+
+message Time {
+    google.protobuf.Timestamp proto_time = 1;
+}
+
+message Duration {
+    google.protobuf.Duration proto_duration = 1;
+}
