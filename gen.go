@@ -1,3 +1,4 @@
 package chrono
 
-//go:generate protoc --go_out=. --dart_out=grpc:../../dart/chrono chrono.proto
+//go:generate protoc --go_out=. chrono.proto
+//go:generate go run cmd/gen.go > stubs.gen.go
